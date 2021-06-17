@@ -3,7 +3,7 @@ import react from "react";
 type questionProps = {
     question: string;
     systemAnswers: string[];
-    userAnswer: boolean;
+    userAnswer: any;
     questionNumber: number;
     totalQuestions: number;
     callback: any;
