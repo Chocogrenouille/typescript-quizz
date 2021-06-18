@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 export const QuestionWrapper = styled.div`
     max-width: 1100px;
-    background: #ebfeff;
-    border-radius: 10x;
-    border: 2px solid black;
+    background: #c6dad9;
+    border: 2px solid #ae0417;
+    border-radius: 5px;
     padding: 20px;
     text-align: center;
-
-    p{
+    margin-bottom: 1rem;
+    p {
         font-size: 1rem,
     }
 `
@@ -29,17 +29,17 @@ export const ButtonWrapper = styled.div<ButtonWrapperProps>`
         user-select: none;
         font-size: 0.8rem;
         width: 100%;
-        height 40px;
-        margin 5px 0;
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: black;
         background: ${({correct, userClicked}) => 
             correct ? 
-            'linear-gradient(90deg, #56ffa4, #59bc86)' 
+            'linear-gradient(90deg, #cad55e, #4e601a)' 
             : !correct && userClicked
-            ? 'linear-gradient(90deg, #ff5656, #c16868)' 
-            : 'linear-gradient(90deg, #56ccff, #6eafb4)' 
+            ? 'linear-gradient(90deg, #e6804f, #af1a1a)' 
+            : 'linear-gradient(90deg, #c6d9d9, #687f7f)' 
         }
-        border: 3px solid white;
-        border-radius: 5px;
-        color: white;
     }
 `

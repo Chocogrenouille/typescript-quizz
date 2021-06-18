@@ -71,7 +71,7 @@ function App() {
         {gameOver || userAnswers.length === setTotalQuestions ? (
           <button className="start" onClick={startQuizz}>Start</button>
         ) : null}
-        {!gameOver ?  <p className="score">Score: {score}</p> : null}
+        {!gameOver ?  <p className="score"> Score: {score}</p> : null}
         {loading && <p>Loading Questions ...</p>}
         {!loading && !gameOver && (
           <QuestionCard 

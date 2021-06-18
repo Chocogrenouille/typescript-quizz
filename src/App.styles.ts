@@ -26,28 +26,25 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
 
-    > p {
-        color: #ffffff;
-    }
-
-    .score: {
-        color: #ffffff;
+    .score {
+        color: white;
+        font-family: 'Crushed', serif;
         font-size: 2rem;
-        margin: 0;
+        margin-bottom: 1rem;
     }
 
     h1 {
-        font-family: 'Fredericka the Great', serif;
-        color: white;
-        font-size: 3rem;
+        font-family: 'Crushed', serif;
+        color: #ae0417;
+        font-size: 5rem;
         text-align: center;
-        margin: 20px;
+        margin: 1rem;
     }
 
     .start, .next {
         cursor: pointer;
         background: white;
-        border: 1.5px solid red;
+        border: 2px solid #ae0417;
         border-radius: 5px;
         padding: 8px 20px;
     }
